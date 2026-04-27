@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibertyStack Solutions Private Limited</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><a href="index.html"><img src="assets/logo.png" alt="LibertyStack logo">LIBERTYSTACK</a></div>
+        <ul>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Solutions</a>
+                <div class="dropdown-content">
+                    <a href="development.html">Development</a>
+                    <a href="creative.html">Creative</a>
+                    <a href="operations.html">Operations</a>
+                </div>
+            </li>
+            <li><a href="index.html#services">Capabilities</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="index.html#contact" class="btn-outline">Schedule Consultation</a>
+            <a href="index.html#contact" class="btn-primary">Request Quote</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>LibertyStack</h1>
+        <p>Solutions Private Limited</p>
+        <a href="#contact" class="btn">Email Headquarters</a>
+    </section>
+
+    <div class="container" id="services">
+        <div class="section-header">
+            <h2 class="section-title">Core Services</h2>
+        </div>
+        <div class="bento-grid">
+            <div class="glass-card">
+                <h3>Technical Development</h3>
+                <p>Advanced web architecture and custom coding solutions (Python, Shopify). We build high-performance systems for a digital-first world.</p>
+                <a href="development.html" class="btn" style="margin-top:auto; padding: 10px 20px; align-self: flex-start;">Explore</a>
+            </div>
+            <div class="glass-card">
+                <h3>Creative Production</h3>
+                <p>Professional video editing and visual branding designed to capture attention in international markets.</p>
+                <a href="creative.html" class="btn" style="margin-top:auto; padding: 10px 20px; align-self: flex-start;">Explore</a>
+            </div>
+            <div class="glass-card">
+                <h3>Business Operations</h3>
+                <p>Strategic customer support and order management contracts to streamline your enterprise workflow.</p>
+                <a href="operations.html" class="btn" style="margin-top:auto; padding: 10px 20px; align-self: flex-start;">Explore</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    
+    <div class="container faq-section" id="faq">
+        <div class="section-header">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        
+        <button class="accordion">1. What types of eCommerce platforms do you specialize in?</button>
+        <div class="panel">
+            <p>We specialize in custom Shopify development, enabling businesses to scale efficiently in international markets with tailored themes, custom apps, and seamless third-party integrations.</p>
+        </div>
+
+        <button class="accordion">2. Can you handle complex backend integrations?</button>
+        <div class="panel">
+            <p>Yes. Our team of Python developers excels at building robust backend architectures, custom APIs, and automating enterprise workflows to ensure your operations run smoothly.</p>
+        </div>
+
+        <button class="accordion">3. What does your Customer Support Outsourcing entail?</button>
+        <div class="panel">
+            <p>Our L1/L2 customer support services provide professional, multi-channel assistance for international clients, ensuring high customer satisfaction and efficient ticket resolution around the clock.</p>
+        </div>
+
+        <button class="accordion">4. How do you manage international order processing?</button>
+        <div class="panel">
+            <p>We leverage advanced Order Management Systems (OMS) to streamline inventory tracking, order fulfillment, and international shipping logistics, reducing errors and turnaround times.</p>
+        </div>
+
+        <button class="accordion">5. Do you provide customized service packages?</button>
+        <div class="panel">
+            <p>Absolutely. LibertyStack Solutions offers flexible BPO and technical service packages tailored to your specific operational needs and growth objectives.</p>
+        </div>
+    </div>
+
+    <section class="contact-section" id="contact">
+        <h2>Secure Contact Gateway</h2>
+        <p style="font-family: 'Segoe UI', sans-serif; margin-bottom: 30px;">Direct inquiry channel for LibertyStack operations.</p>
+
+        <div class="contact-container">
+            <form action="https://formspree.io/f/mjgjzzgj" method="POST">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="name" required placeholder="Ex: John Doe">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Ex: john@company.com">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Include country code">
+
+                <label for="message">Your Concern / Project Brief</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Provide details about your project or inquiry..."></textarea>
+
+                <input type="hidden" name="_subject" value="New Business Inquiry - LibertyStack">
+
+                <button type="submit" class="btn submit-btn">Submit Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-cta">
+            <a href="index.html#contact" class="btn-primary">Request a Quote</a>
+            <a href="index.html#contact" class="btn-outline" style="border-color: #888; color: #888;">Schedule a Consultation</a>
+        </div>
+        <strong>LibertyStack Solutions Private Limited</strong>
+        <p>&copy; 2026. All Rights Reserved.</p>
+        <p>Built for Excellence. Driven by Liberty.</p>
+    </footer>
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        }
+    </script>
+</body>
+</html>
