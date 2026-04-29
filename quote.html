@@ -8,53 +8,50 @@
 </head>
 <body>
     <nav>
-        <div class="logo"><a href="index.html"><img src="logo.png" alt="LibertyStack logo">LIBERTYSTACK</a></div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="development.html">Development</a></li>
-            <li><a href="creative.html">Creative</a></li>
-            <li><a href="operations.html">Operations</a></li>
-        </ul>
+        <div class="container nav-container">
+            <div class="logo"><a href="index.html">LIBERTYSTACK</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="development.html">Development</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <section class="contact-section">
+    <section class="faq-split">
+        <div class="container text-center">
+            <h1>Request a Quote</h1>
+            <p>Tell us about your project, and we'll get back to you within 24 hours.</p>
+        </div>
+    </section>
+
+    <section class="subpage-content">
         <div class="container">
-            <h1 style="text-align: center; color: white; margin-bottom: 10px;">Request a Quote</h1>
-            <p style="text-align: center; color: #888; margin-bottom: 40px;">Tell us about your project, and our team will get back to you within 24 hours.</p>
-
-            <div class="contact-container" style="max-width: 600px; margin: 0 auto;">
-                <form action="https://formspree.io/f/xbdqeqpg" method="POST">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="name" required placeholder="Ex: John Doe">
-
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required placeholder="Ex: john@company.com">
-
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Include country code">
-
-                    <label for="service">Interested Service</label>
-                    <select id="service" name="service" style="width: 100%; padding: 12px; background: #1a1a1a; border: 1px solid #333; color: white; border-radius: 5px; margin-bottom: 20px;">
-                        <option value="Technical Development">Technical Development</option>
-                        <option value="Creative Production">Creative Production</option>
-                        <option value="Business Operations">Business Operations</option>
-                        <option value="Other">Other / General Inquiry</option>
+            <div class="form-container">
+                <form action="#" method="POST">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Ex: John Doe" required>
+                    
+                    <label>Email Address</label>
+                    <input type="email" placeholder="john@company.com" required>
+                    
+                    <label>Interested Service</label>
+                    <select>
+                        <option>Technical Development</option>
+                        <option>Creative Production</option>
+                        <option>Strategic Operations</option>
                     </select>
-
-                    <label for="message">Project Brief</label>
-                    <textarea id="message" name="message" rows="6" required placeholder="Describe your requirements..."></textarea>
-
-                    <input type="hidden" name="_subject" value="New LibertyStack Quote Request">
-
-                    <button type="submit" class="btn submit-btn" style="width: 100%;">Submit Request</button>
+                    
+                    <label>Project Brief</label>
+                    <textarea rows="5" placeholder="Describe your requirements..."></textarea>
+                    
+                    <button type="submit" class="btn-primary" style="width:100%">Submit Request</button>
                 </form>
             </div>
         </div>
     </section>
 
     <footer>
-        <strong>LibertyStack Solutions</strong>
-        <p>&copy; 2026. All Rights Reserved.</p>
+        <p>&copy; 2026 LibertyStack Solutions. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
