@@ -3,88 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Ishant Kumar Sharma | CEO & Founder of LibertyStack Solutions</title>
-    <meta name="author" content="Ishant Kumar Sharma">
-    <meta name="description" content="Official site of Ishant Kumar Sharma, Founder of LibertyStack Solutions. Specializing in Technical Development, Shopify Architecture, and Creative Media.">
-
-    <meta property="og:title" content="Ishant Kumar Sharma | LibertyStack Solutions">
-    <meta property="og:description" content="Technical Architect and CEO specializing in elite digital infrastructure.">
-    <meta property="og:image" content="ceo-suit-photo.jpg"> 
-    <meta property="og:url" content="https://libertystack.co.in">
-    <meta property="og:type" content="website">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ishant Kumar Sharma",
-      "jobTitle": "CEO & Founder",
-      "affiliation": {
-        "@type": "Organization",
-        "name": "LibertyStack Solutions"
-      },
-      "url": "https://libertystack.co.in",
-      "sameAs": [
-        "https://github.com/libertystack01"
-      ]
-    }
-    </script>
-
+    
+    <meta name="description" content="Official site of Ishant Kumar Sharma, Founder of LibertyStack Solutions.">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav>
-        <div class="logo">
-            <a href="index.html">
-                <img src="logo.png" alt="LibertyStack Logo">
-                LIBERTYSTACK
-            </a>
-        </div>
-        <ul>
-            <li><a href="development.html">Development</a></li>
-            <li><a href="creative.html">Creative</a></li>
-            <li><a href="operations.html">Operations</a></li>
-        </ul>
-        <div class="nav-actions">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="LibertyStack Logo">
+                    <span>LIBERTYSTACK</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="development.html">Development</a></li>
+                <li><a href="creative.html">Creative</a></li>
+                <li><a href="operations.html">Operations</a></li>
+            </ul>
             <a href="quote.html" class="btn-primary">Request Quote</a>
         </div>
     </nav>
 
     <section class="hero">
-        <div class="hero-content">
+        <div class="container hero-content">
             <h1>LibertyStack <span class="highlight">Solutions.</span></h1>
             <p>We build high-performance digital engines. Specialized in Technical Development, Creative Production, and Strategic Operations.</p>
-            <div class="hero-btns-container"> <a href="quote.html" class="btn-primary">Get a Proposal</a>
+            <div class="btn-wrapper">
+                <a href="quote.html" class="btn-primary">Get a Proposal</a>
             </div>
         </div>
     </section>
 
-    <section class="services" id="services">
+    <section class="dark-section" id="services">
         <div class="container">
             <div class="section-header">
-                <h2>Our Core TriadTo make "The Founder’s Vision" section stand out, adding a professional background image or a subtle gradient texture will give it a high-end agency feel.
+                <h2>Our Core Triad</h2>
+                <p>Elite services for scaling enterprises.</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>Technical</h3>
+                    <p>Python automation, custom Shopify Liquid themes, and backend engineering.</p>
+                    <a href="development.html" class="link">Learn More →</a>
+                </div>
+                <div class="card">
+                    <h3>Creative</h3>
+                    <p>High-impact video editing, brand identity systems, and UI/UX design.</p>
+                    <a href="creative.html" class="link">Learn More →</a>
+                </div>
+                <div class="card">
+                    <h3>Operations</h3>
+                    <p>L1/L2 Support, order management for POD, and process optimization.</p>
+                    <a href="operations.html" class="link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-Here is the updated HTML and CSS block specifically for that section. I recommend using a dark, professional architectural or tech-themed background to match the "CEO in a suit" aesthetic.
-
-### 1. Updated HTML Block
-In your `index.html`, wrap the content in an overlay div to ensure the text remains readable over the background image.
-
-```html
-<section class="about" id="about">
-    <div class="founder-overlay"> <div class="container founder-grid">
+    <section class="dark-section about">
+        <div class="container founder-grid">
             <div class="founder-image">
-                <img src="ceo-suit-photo.jpg" alt="Ishant Kumar Sharma - CEO">
+                <img src="ceo-suit-photo.jpg" alt="Ishant Kumar Sharma">
             </div>
             <div class="founder-text">
                 <h2>The Founder’s Vision</h2>
-                <p><strong>Ishant Kumar Sharma</strong> founded LibertyStack Solutions with a single mission: to redefine execution. In an era of bloated agencies, we move fast, build lean, and prioritize technical excellence over corporate hierarchy.</p>
+                <p><strong>Ishant Kumar Sharma</strong> founded LibertyStack Solutions with a single mission: to redefine execution.</p>
                 <p class="quote">"We don't just build websites; we design the operational engines that allow founders to reclaim their time."</p>
                 <div class="signature">Ishant Kumar Sharma</div>
                 <p class="role">CEO & Founder</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <section class="dark-section faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What industries do you serve?</h4>
+                    <p>We specialize in E-commerce, SaaS, and Professional Service firms.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do we get started?</h4>
+                    <p>Submit your project brief. We respond within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <h3>Ready to scale?</h3>
+            <div class="btn-wrapper">
+                <a href="quote.html" class="btn-primary">Request Quote</a>
+            </div>
+            <hr>
+            <p>&copy; 2026 LibertyStack Solutions. Founder: Ishant Kumar Sharma</p>
+        </div>
+    </footer>
+
+</body>
+</html>
