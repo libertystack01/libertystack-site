@@ -1,76 +1,56 @@
 /* RESET & GLOBALS */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Inter', sans-serif; color: #fff; background: #0a0a0c; line-height: 1.6; overflow-x: hidden; }
+body { font-family: 'Inter', sans-serif; color: #fff; background: #121214; line-height: 1.6; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-/* NAVIGATION (Fixed at top) */
-nav { padding: 15px 0; position: sticky; top: 0; z-index: 1000; background: rgba(10, 10, 12, 0.95); border-bottom: 1px solid rgba(255,255,255,0.1); }
+/* NAVIGATION */
+nav { padding: 15px 0; background: rgba(20, 20, 22, 0.98); border-bottom: 1px solid rgba(255,255,255,0.1); position: sticky; top: 0; z-index: 1000; }
 .nav-container { display: flex; justify-content: space-between; align-items: center; }
 .logo a { display: flex; align-items: center; text-decoration: none; color: #fff; font-weight: bold; }
-.logo img { height: 45px; margin-right: 12px; }
-.nav-links { display: flex; list-style: none; gap: 30px; }
-.nav-links a { text-decoration: none; color: #ccc; font-weight: 500; transition: 0.3s; }
+.logo img { height: 40px; margin-right: 12px; }
+.nav-links { display: flex; list-style: none; gap: 25px; }
+.nav-links a { text-decoration: none; color: #bbb; font-size: 0.9rem; transition: 0.3s; }
 .nav-links a:hover { color: #c8102e; }
 
-/* BUTTONS (Fixed placement) */
+/* BUTTONS */
 .btn-primary { 
-    background: #c8102e; color: #fff; padding: 14px 28px; border-radius: 4px; 
-    text-decoration: none; font-weight: bold; display: inline-block; transition: 0.3s;
-    border: none; cursor: pointer;
+    background: #c8102e; color: #fff; padding: 12px 24px; border-radius: 4px; 
+    text-decoration: none; font-weight: bold; display: inline-block; transition: 0.3s; border: none;
 }
-.btn-primary:hover { background: #a00d25; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(200, 16, 46, 0.3); }
-.btn-wrapper { margin-top: 40px; display: block; width: 100%; }
+.btn-primary:hover { background: #e61233; transform: translateY(-2px); }
 
-/* --- THE SPLIT VIEW BACKGROUNDS --- */
+/* LIGHTER SPLIT BACKGROUNDS */
+.hero, .services-split, .founder-split, .faq-split, .subpage-header {
+    background-size: cover; background-position: center; background-attachment: fixed;
+    padding: 100px 0;
+}
 
-/* Background 1: Hero */
 .hero { 
-    background: linear-gradient(rgba(10, 10, 12, 0.7), rgba(10, 10, 12, 0.7)), 
-                url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000');
-    background-size: cover; background-position: center; background-attachment: fixed;
-    height: 90vh; display: flex; align-items: center; text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000'); 
+    height: 70vh; display: flex; align-items: center; text-align: center;
 }
-.hero h1 { font-size: 4.5rem; margin-bottom: 20px; line-height: 1.1; }
-.highlight { color: #c8102e; }
 
-/* Background 2: Services & About */
 .services-split, .founder-split { 
-    background: linear-gradient(rgba(10, 10, 12, 0.85), rgba(10, 10, 12, 0.85)), 
-                url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000');
-    background-size: cover; background-position: center; background-attachment: fixed;
-    padding: 120px 0;
+    background-image: linear-gradient(rgba(18, 18, 20, 0.75), rgba(18, 18, 20, 0.75)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000'); 
 }
 
-/* Background 3: FAQ (Unique Split) */
 .faq-split { 
-    background: linear-gradient(rgba(15, 15, 20, 0.9), rgba(15, 15, 20, 0.9)), 
-                url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000');
-    background-size: cover; background-position: center; background-attachment: fixed;
-    padding: 120px 0;
-    border-top: 1px solid rgba(200, 16, 46, 0.3);
+    background-image: linear-gradient(rgba(20, 20, 25, 0.8), rgba(20, 20, 25, 0.8)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000'); 
 }
 
-/* CARDS & GRID */
-.section-header { text-align: center; margin-bottom: 60px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-.card { background: rgba(255,255,255,0.03); padding: 40px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); text-align: center; transition: 0.3s; }
-.card:hover { transform: translateY(-10px); background: rgba(255,255,255,0.05); }
+/* SUB-PAGE & FORM STYLING */
+.subpage-content { padding: 80px 0; background: #121214; }
+.form-container { max-width: 600px; margin: 0 auto; background: #1c1c1f; padding: 40px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); }
+input, select, textarea { 
+    width: 100%; padding: 12px; margin: 10px 0 20px; background: #2a2a2e; border: 1px solid #333; color: #fff; border-radius: 4px; 
+}
+label { font-weight: bold; color: #c8102e; font-size: 0.9rem; text-transform: uppercase; }
+
+/* SERVICE CARDS */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+.card { background: #1c1c1f; padding: 40px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); text-align: center; transition: 0.3s; }
+.card:hover { border-color: #c8102e; }
 .card h3 { color: #c8102e; margin-bottom: 15px; }
-.link { color: #fff; text-decoration: none; font-weight: bold; display: block; margin-top: 20px; }
-
-/* FOUNDER SECTION */
-.founder-grid { display: flex; align-items: center; gap: 60px; }
-.founder-image img { width: 100%; max-width: 450px; border-radius: 10px; box-shadow: 0 30px 60px rgba(0,0,0,0.5); }
-.quote { font-style: italic; font-size: 1.4rem; border-left: 4px solid #c8102e; padding-left: 25px; margin: 30px 0; color: #ddd; }
-.signature { font-family: 'Playfair Display', serif; font-size: 2.2rem; margin-top: 30px; }
-.role { color: #c8102e; letter-spacing: 3px; text-transform: uppercase; font-size: 0.8rem; font-weight: bold; }
-
-/* FAQ GRID */
-.faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
-.faq-item h4 { color: #c8102e; margin-bottom: 10px; font-size: 1.2rem; }
 
 /* FOOTER */
-footer { background: #050505; padding: 80px 0; text-align: center; }
-footer h3 { margin-bottom: 10px; font-size: 2rem; }
-footer hr { border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 50px 0; }
-.footer-bottom { display: flex; justify-content: space-between; font-size: 0.9rem; color: #777; }
+footer { background: #0a0a0b; padding: 60px 0; text-align: center; border-top: 1px solid #222; }
