@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><title>Request Quote | LibertyStack</title>
+    <meta charset="UTF-8"><title>Get a Proposal | LibertyStack</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav><div class="container nav-container">
-        <div class="logo"><a href="index.html">LIBERTYSTACK</a></div>
-        <a href="index.html" style="color:#bbb; text-decoration:none;">← Home</a>
-    </div></nav>
+<body style="background: #f4f7f6;">
+    <nav>
+        <div class="container nav-container">
+            <div class="logo"><a href="index.html">LIBERTYSTACK</a></div>
+            <a href="index.html" style="color:#555; text-decoration:none; font-weight: bold;">← Back to Home</a>
+        </div>
+    </nav>
 
-    <section class="section-bg sub-bg text-center">
-        <div class="container"><h1>Get Your Proposal</h1><p>Start your journey with LibertyStack.</p></div>
-    </section>
-
-    <section style="padding: 80px 0;">
-        <div class="container">
+    <section style="padding: 100px 0;">
+        <div class="container text-center">
+            <h1 style="margin-bottom: 10px;">Request a Quote</h1>
+            <p style="color: #666; margin-bottom: 50px;">Tell us about your project requirements.</p>
+            
             <div class="form-container">
                 <form action="#">
-                    <div class="form-group"><label>Full Name</label><input type="text" placeholder="John Doe" required></div>
-                    <div class="form-group"><label>Email Address</label><input type="email" placeholder="john@company.com" required></div>
-                    <div class="form-group"><label>Service</label>
-                        <select><option>Technical Development</option><option>Creative Production</option><option>Strategic Operations</option></select>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Your Name" required>
                     </div>
-                    <div class="form-group"><label>Project Brief</label><textarea rows="6" placeholder="Describe your goals..."></textarea></div>
-                    <button type="submit" class="btn-primary" style="width:100%;">Submit Request</button>
+                    <div class="form-group">
+                        <label>Professional Email</label>
+                        <input type="email" placeholder="name@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Service Category</label>
+                        <select>
+                            <option>Technical Development (Python/Shopify)</option>
+                            <option>Creative Production (Video/UI/UX)</option>
+                            <option>Strategic Operations (L1/L2 Support)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Project Brief & Requirements</label>
+                        <textarea rows="6" placeholder="Please describe your project in detail..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; font-size: 1.1rem; padding: 18px;">Submit Proposal Request</button>
                 </form>
             </div>
         </div>
