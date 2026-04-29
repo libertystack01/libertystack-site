@@ -1,169 +1,56 @@
-/* GLOBAL STYLES */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* NAVIGATION */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo img {
-    height: 30px;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #1a1a1a;
-    font-weight: 500;
-}
-
-/* BUTTONS */
-.btn-primary {
-    background: #c8102e; /* Brand Red */
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.btn-primary:hover {
-    background: #a00d25;
-}
-
-/* HERO SECTION */
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000');
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-}
-
-.hero h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-}
-
-.highlight {
-    color: #c8102e;
-}
-
-/* SERVICES GRID */
-.services {
-    padding: 80px 0;
-    text-align: center;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-}
-
-.card {
-    background: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-/* FOUNDER SECTION WITH BACKGROUND */
 .about {
     position: relative;
-    background: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000') no-repeat center center/cover;
+    /* Replace the URL below with a tech-themed background or a dark office shot */
+    background: url('[https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000](https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000)') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 100px 0;
     overflow: hidden;
 }
 
 .founder-overlay {
-    background: rgba(10, 10, 12, 0.9);
-    padding: 100px 0;
+    background: rgba(10, 10, 12, 0.85); /* Dark tint so text is easy to read */
+    padding: 60px 0;
     width: 100%;
 }
 
 .founder-grid {
     display: flex;
     align-items: center;
-    gap: 60px;
-    color: #fff;
+    gap: 50px;
 }
 
 .founder-image img {
     width: 100%;
-    max-width: 450px;
-    border-radius: 15px;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
     border: 1px solid rgba(255,255,255,0.1);
-    box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+}
+
+.founder-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
 }
 
 .founder-text .quote {
     font-style: italic;
-    font-size: 1.25rem;
-    color: #e0e0e0;
-    border-left: 4px solid #c8102e;
+    font-size: 1.2rem;
+    color: #d1d1d1;
+    border-left: 3px solid #ff4d4d; /* Brand accent color */
     padding-left: 20px;
-    margin: 30px 0;
+    margin: 25px 0;
 }
 
 .signature {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    margin-top: 40px;
+    font-family: 'Playfair Display', serif; /* Or any elegant font */
+    font-size: 1.8rem;
+    margin-top: 30px;
 }
 
 .role {
-    color: #c8102e;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: bold;
-}
-
-/* FOOTER */
-footer {
-    padding: 60px 0;
-    background: #111;
-    color: #fff;
-    text-align: center;
-}
-
-.footer-cta {
-    margin-bottom: 40px;
+    color: #ff4d4d;
 }
