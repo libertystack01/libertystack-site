@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LibertyStack Solutions | Ishant Kumar Sharma</title>
     
-    <!-- FAVICON: Taskbar icon as requested -->
+    <!-- FAVICON: Taskbar icon -->
     <link rel="icon" type="image/png" href="logo.png">
     
     <!-- FontAwesome for Social Icons -->
@@ -50,9 +50,10 @@
         .hero p { max-width: 800px; margin: 0 auto 30px; font-size: 1.2rem; color: #444; font-weight: 500; }
         .btn { padding: 16px 40px; background: #c8102e; color: #fff; text-decoration: none; font-weight: bold; border-radius: 4px; display: inline-block; transition: 0.3s; }
         .btn:hover { background: #a00d25; transform: translateY(-2px); }
+        .btn-small { padding: 10px 20px; background: #c8102e; color: #fff; text-decoration: none; font-size: 0.8rem; font-weight: bold; border-radius: 4px; display: inline-block; margin-top: 15px; transition: 0.3s; }
 
         /* Founder Section */
-        .founder-section { padding: 80 -px 5%; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .founder-section { padding: 80px 5%; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
         .verified-badge { background: #c8102e; color: #fff; padding: 5px 15px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; display: inline-block; margin-bottom: 20px; }
         .founder-text h2 { font-size: 2.5rem; margin-bottom: 10px; }
         .founder-text h4 { color: #c8102e; margin-bottom: 20px; font-size: 1rem; }
@@ -63,7 +64,7 @@
         .container { max-width: 1200px; margin: 0 auto; padding: 80px 5%; background: #fcfcfc; }
         .section-title { text-align: center; font-size: 2rem; margin-bottom: 50px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .card { padding: 40px; border: 1px solid #eee; border-radius: 8px; transition: 0.3s; background: #fff; }
+        .card { padding: 40px; border: 1px solid #eee; border-radius: 8px; transition: 0.3s; background: #fff; display: flex; flex-direction: column; justify-content: space-between; }
         .card:hover { border-color: #c8102e; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
 
         /* Footer */
@@ -86,10 +87,10 @@
             <span class="logo-text">LibertyStack Solutions</span>
         </a>
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#founder">About</a>
-            <a href="#services">Creative</a>
-            <a href="#services">Operational</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="creative.html">Creative</a>
+            <a href="operations.html">Operational</a>
         </div>
     </nav>
 
@@ -109,7 +110,7 @@
             </div>
         </div>
         <div class="founder-image">
-            <!-- Using the exact filename from your GitHub: founder-portrait.png.jpeg -->
+            <!-- Using your repository image: founder-portrait.png.jpeg -->
             <img src="founder-portrait.png.jpeg" alt="Ishant Kumar Sharma - Founder & CEO">
         </div>
     </section>
@@ -118,16 +119,25 @@
         <h2 class="section-title">Operational & Creative Solutions</h2>
         <div class="grid">
             <div class="card">
-                <h3>Technical Operations</h3>
-                <p>Scaling back-end systems with Python to handle 10x traffic spikes with 99.9% uptime.</p>
+                <div>
+                    <h3>Technical Operations</h3>
+                    <p>Scaling back-end systems with Python to handle traffic spikes and automated order management.</p>
+                </div>
+                <a href="operations.html" class="btn-small">View Sample Work</a>
             </div>
             <div class="card">
-                <h3>Creative Architecture</h3>
-                <p>Custom Shopify storefront development that converts visitors into loyal customers.</p>
+                <div>
+                    <h3>Creative Architecture</h3>
+                    <p>Custom Shopify storefront development that converts visitors into loyal customers.</p>
+                </div>
+                <a href="creative.html" class="btn-small">View Portfolio</a>
             </div>
             <div class="card">
-                <h3>Automation Logic</h3>
-                <p>Building custom bots and sync engines to save your team 20+ hours of manual labor weekly.</p>
+                <div>
+                    <h3>Automation Logic</h3>
+                    <p>Building custom bots and sync engines to save your team 20+ hours of manual labor weekly.</p>
+                </div>
+                <a href="operations.html" class="btn-small">Learn More</a>
             </div>
         </div>
     </div>
