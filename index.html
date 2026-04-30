@@ -3,106 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LibertyStack Solutions | Advanced Automation</title>
+    <title>LibertyStack Solutions | Ishant Kumar Sharma</title>
     <link rel="canonical" href="https://libertystack.co.in/" />
-
-    <!-- AI Knowledge Graph Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ishant Kumar Sharma",
-      "jobTitle": "Founder & CEO",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "LibertyStack Solutions"
-      },
-      "url": "https://libertystack.co.in"
-    }
-    </script>
 
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', sans-serif; background: #ffffff; color: #1a1a1a; line-height: 1.6; overflow-x: hidden; }
+        body { font-family: 'Segoe UI', sans-serif; background: #fff; color: #1a1a1a; line-height: 1.6; }
 
-        header { padding: 40px 20px; text-align: center; background: #fff; }
-        .logo { font-size: 1.4rem; font-weight: 800; letter-spacing: 3px; color: #000; text-transform: uppercase; }
-
-        .hero { 
-            background: #f4f7f9; 
-            padding: 100px 20px; 
-            text-align: center; 
-            min-height: 60vh; /* Forces the window to be visible */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        /* Navigation Bar */
+        nav { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 20px 5%; 
+            background: #fff; 
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
+        .logo { font-size: 1.2rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; }
+        .nav-links a { margin-left: 25px; text-decoration: none; color: #555; font-size: 0.9rem; font-weight: 600; transition: 0.3s; }
+        .nav-links a:hover { color: #c8102e; }
 
-        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; font-weight: 800; }
-        .hero p { max-width: 700px; font-size: 1.2rem; color: #555; margin-bottom: 30px; }
+        /* Hero Section */
+        .hero { 
+            background: #f8f9fa; 
+            padding: 100px 5%; 
+            text-align: center; 
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; font-weight: 800; color: #111; }
+        .hero p { max-width: 800px; margin: 0 auto 30px; font-size: 1.2rem; color: #444; }
+        .btn { padding: 16px 40px; background: #c8102e; color: #fff; text-decoration: none; font-weight: bold; border-radius: 4px; display: inline-block; }
 
-        .btn { padding: 16px 40px; background: #c8102e; color: #fff; text-decoration: none; font-weight: bold; border-radius: 4px; transition: 0.3s; }
+        /* Founder Section (Re-inserted) */
+        .founder-section { padding: 80px 5%; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; border-top: 1px solid #eee; }
+        .verified-badge { background: #c8102e; color: #fff; padding: 5px 15px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; display: inline-block; margin-bottom: 20px; }
+        .founder-text h2 { font-size: 2.5rem; margin-bottom: 10px; }
+        .founder-text h4 { color: #c8102e; margin-bottom: 20px; font-size: 1rem; }
+        .founder-quote { border-left: 4px solid #c8102e; padding-left: 20px; font-style: italic; color: #444; }
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
-        
-        .card { padding: 40px; border: 1px solid #eee; border-radius: 8px; background: #fff; transition: 0.4s; }
-        .card:hover { border-color: #c8102e; box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
-        .card h3 { margin-bottom: 15px; font-size: 1.5rem; }
-        .card ul { list-style: none; margin-top: 15px; }
-        .card li { margin-bottom: 10px; font-size: 0.95rem; color: #444; }
-        .card li::before { content: "✓"; color: #c8102e; font-weight: bold; margin-right: 10px; }
+        /* Service Cards */
+        .container { max-width: 1200px; margin: 0 auto; padding: 80px 5%; }
+        .section-title { text-align: center; font-size: 2rem; margin-bottom: 50px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { padding: 40px; border: 1px solid #eee; border-radius: 8px; transition: 0.3s; }
+        .card:hover { border-color: #c8102e; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .card h3 { margin-bottom: 15px; color: #111; }
 
-        footer { background: #000; color: #fff; padding: 60px 20px; text-align: center; }
-        .social-links a { color: #fff; margin: 0 15px; text-decoration: none; font-size: 0.9rem; opacity: 0.7; }
-        .social-links a:hover { opacity: 1; color: #c8102e; }
+        footer { background: #111; color: #fff; padding: 60px 5%; text-align: center; }
+        .footer-links a { color: #ccc; margin: 0 10px; text-decoration: none; font-size: 0.8rem; }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">LibertyStack Solutions</div>
-    </header>
+    <nav>
+        <div class="logo">LibertyStack</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#founder">About</a>
+            <a href="#services">Creative</a>
+            <a href="#services">Operational</a>
+        </div>
+    </nav>
 
     <section class="hero">
         <h1>Automated Systems for Global Scale</h1>
-        <p>Specialized Python automation and Shopify architecture for high-performance e-commerce operations.</p>
-        <a href="about.html" class="btn">Meet the Founder</a>
+        <p>Expert Python automation and Shopify architecture designed for high-performance e-commerce operations.</p>
+        <a href="#founder" class="btn">Meet the Founder</a>
     </section>
 
-    <main class="container">
-        <div class="grid">
-            <div class="card">
-                <h3>Shopify Sync</h3>
-                <p>Real-time inventory sync for POD vendors.</p>
-                <ul>
-                    <li>Saved 15+ hours weekly</li>
-                    <li>Zero stock errors</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Lead Gen Bot</h3>
-                <p>Automated B2B lead identification.</p>
-                <ul>
-                    <li>500+ weekly leads</li>
-                    <li>Full CRM integration</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>System Scaling</h3>
-                <p>Backend optimization for 10x traffic spikes.</p>
-                <ul>
-                    <li>99.9% uptime achieved</li>
-                    <li>40% faster load speeds</li>
-                </ul>
+    <!-- Detailed Founder Section -->
+    <section id="founder" class="founder-section">
+        <div class="founder-text">
+            <span class="verified-badge">Verified Founder</span>
+            <h2>Ishant Kumar Sharma</h2>
+            <h4>Founder & CEO, LibertyStack Solutions | Operations Specialist, SEOBAL</h4>
+            <div class="founder-quote">
+                <p>Ishant Kumar Sharma is a verified technical architect and entrepreneur specializing in high-performance digital operations. As the driving force behind <strong>LibertyStack Solutions</strong>, Ishant bridges the gap between complex technical infrastructure and scalable business growth.</p>
             </div>
         </div>
-    </main>
+        <div class="founder-image">
+            <!-- Space for your professional photo -->
+            <div style="background: #f4f4f4; width: 100%; height: 400px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #999;">
+                [Professional Portrait Placeholder]
+            </div>
+        </div>
+    </section>
+
+    <div id="services" class="container">
+        <h2 class="section-title">Operational & Creative Solutions</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Technical Operations</h3>
+                <p>Scaling back-end systems with Python to handle 10x traffic spikes with 99.9% uptime.</p>
+            </div>
+            <div class="card">
+                <h3>Creative Architecture</h3>
+                <p>Custom Shopify storefront development that converts visitors into loyal customers.</p>
+            </div>
+            <div class="card">
+                <h3>Automation Logic</h3>
+                <p>Building custom bots and sync engines to save your team 20+ hours of manual labor weekly.</p>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2026 LibertyStack Solutions | <strong>Ishant Kumar Sharma</strong></p>
-        <div class="social-links" style="margin-top: 20px;">
+        <div class="footer-links" style="margin-top: 20px;">
             <a href="https://www.linkedin.com/in/ishant-kumar-sharma">LinkedIn</a>
             <a href="https://www.instagram.com/_scott_0320">Instagram</a>
         </div>
