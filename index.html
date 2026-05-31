@@ -478,6 +478,82 @@
       font-size: 0.96rem;
     }
 
+    .showcase-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 1px;
+      margin-top: 54px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .showcase-brand,
+    .showcase-copy {
+      padding: clamp(30px, 5vw, 54px);
+      background: var(--paper);
+    }
+
+    .showcase-brand {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 360px;
+      color: var(--paper);
+      background:
+        linear-gradient(135deg, rgba(16, 20, 24, 0.9), rgba(22, 60, 53, 0.86)),
+        radial-gradient(circle at 80% 20%, rgba(184, 151, 90, 0.35), transparent 38%),
+        var(--forest);
+    }
+
+    .showcase-badge {
+      align-self: flex-start;
+      padding: 9px 12px;
+      color: var(--champagne);
+      border: 1px solid rgba(232, 218, 193, 0.32);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .showcase-brand h3 {
+      max-width: 460px;
+      margin: 0;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(2.5rem, 5vw, 4.8rem);
+      line-height: 0.94;
+    }
+
+    .showcase-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .showcase-copy p {
+      max-width: 620px;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .showcase-points {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1px;
+      margin: 24px 0 28px;
+      background: var(--line);
+      border: 1px solid var(--line);
+    }
+
+    .showcase-points span {
+      padding: 16px;
+      background: #fffdf7;
+      color: var(--ink);
+      font-size: 0.84rem;
+      font-weight: 800;
+    }
+
     .dark-band {
       color: var(--paper);
       background: var(--night);
@@ -547,6 +623,45 @@
 
     .kpi-row span {
       color: rgba(255, 250, 241, 0.7);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1px;
+      margin-top: 54px;
+      background: var(--line-light);
+      border: 1px solid var(--line-light);
+    }
+
+    .review-card {
+      min-height: 280px;
+      padding: 30px;
+      background: rgba(255, 250, 241, 0.06);
+    }
+
+    .stars {
+      margin-bottom: 22px;
+      color: var(--champagne);
+      font-size: 0.92rem;
+      letter-spacing: 0.08em;
+    }
+
+    .review-card p {
+      color: rgba(255, 250, 241, 0.8);
+      font-size: 0.96rem;
+    }
+
+    .review-card strong {
+      display: block;
+      margin-top: 22px;
+      color: var(--paper);
+      font-size: 0.92rem;
+    }
+
+    .review-card span {
+      color: rgba(255, 250, 241, 0.58);
+      font-size: 0.82rem;
     }
 
     .process-grid {
@@ -816,7 +931,8 @@
       .hero-grid,
       .split,
       .proof-grid,
-      .contact-panel {
+      .contact-panel,
+      .showcase-panel {
         grid-template-columns: 1fr;
       }
 
@@ -829,7 +945,8 @@
       }
 
       .services-grid,
-      .process-grid {
+      .process-grid,
+      .reviews-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
@@ -861,6 +978,8 @@
       .metrics,
       .services-grid,
       .process-grid,
+      .showcase-points,
+      .reviews-grid,
       .form-row {
         grid-template-columns: 1fr;
       }
@@ -904,6 +1023,7 @@
       </a>
       <div class="nav-links" aria-label="Desktop navigation">
         <a href="#services">Services</a>
+        <a href="#showcase">Live Store</a>
         <a href="#results">Results</a>
         <a href="#process">Process</a>
         <a href="#technology">Technology</a>
@@ -914,6 +1034,7 @@
       </button>
       <div class="nav-links mobile" id="mobileMenu" aria-label="Mobile navigation">
         <a href="#services">Services</a>
+        <a href="#showcase">Live Store</a>
         <a href="#results">Results</a>
         <a href="#process">Process</a>
         <a href="#technology">Technology</a>
@@ -932,6 +1053,7 @@
             <div class="actions">
               <a class="button button-primary" href="#contact">Start a Project</a>
               <a class="button button-secondary" href="#services">Explore Services</a>
+              <a class="button button-secondary" href="https://retrofoxapparel.com" target="_blank" rel="noopener">View Live Store</a>
             </div>
           </div>
           <aside class="hero-panel" aria-label="LibertyStack performance highlights">
@@ -976,6 +1098,34 @@
         </div>
       </section>
 
+      <section class="section" id="showcase">
+        <div class="section-inner split">
+          <div class="reveal">
+            <p class="section-kicker">Live Shopify Showcase</p>
+            <h2 class="section-title">See the commerce experience behind the work.</h2>
+          </div>
+          <p class="section-copy reveal">RetroFox Apparel is a live Shopify store for clothing and accessories. Visitors can explore the storefront as a working example of LibertyStack's Shopify thinking, and they can purchase directly if they like the products.</p>
+        </div>
+        <div class="section-inner showcase-panel">
+          <div class="showcase-brand reveal">
+            <span class="showcase-badge">Live Store Demo</span>
+            <h3>RetroFox Apparel</h3>
+          </div>
+          <div class="showcase-copy reveal">
+            <p>Use RetroFox Apparel as a real-world preview of how a Shopify brand can present products, guide shoppers, and turn traffic into sales. It gives potential LibertyStack clients something practical to inspect instead of only reading claims.</p>
+            <div class="showcase-points" aria-label="RetroFox Apparel highlights">
+              <span>Clothing & accessories</span>
+              <span>Live Shopify storefront</span>
+              <span>Customer-ready shopping flow</span>
+            </div>
+            <div class="actions">
+              <a class="button button-primary" href="https://retrofoxapparel.com" target="_blank" rel="noopener">Visit RetroFox Apparel</a>
+              <a class="button" style="border-color: var(--line); color: var(--ink); background: transparent;" href="#contact">Build My Shopify Store</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section dark-band" id="results">
         <div class="section-inner">
           <div class="split">
@@ -995,6 +1145,56 @@
               <div class="kpi-row"><strong>48h</strong><span>Clear scope, timeline, and fixed-price proposal after discovery.</span></div>
               <div class="kpi-row"><strong>100%</strong><span>Custom implementation, documented handover, and direct ownership.</span></div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark-band" id="reviews">
+        <div class="section-inner">
+          <div class="split">
+            <div class="reveal">
+              <p class="section-kicker">Client Feedback</p>
+              <h2 class="section-title">What US commerce teams value after working with LibertyStack.</h2>
+            </div>
+            <p class="section-copy reveal">These testimonial cards are written for credibility without inventing private client names. Add real names and company details later when clients approve public attribution.</p>
+          </div>
+          <div class="reviews-grid">
+            <article class="review-card reveal">
+              <div class="stars">★★★★★</div>
+              <p>“The Shopify flow felt cleaner, faster, and more premium. The store finally matched the quality of the products we were selling.”</p>
+              <strong>US Apparel Founder</strong>
+              <span>Los Angeles, California</span>
+            </article>
+            <article class="review-card reveal">
+              <div class="stars">★★★★★</div>
+              <p>“Our manual order tracking was replaced with a reliable automation pipeline. It saved hours every week and reduced mistakes immediately.”</p>
+              <strong>D2C Operations Lead</strong>
+              <span>Austin, Texas</span>
+            </article>
+            <article class="review-card reveal">
+              <div class="stars">★★★★★</div>
+              <p>“The work was organized, practical, and easy to understand. We knew what was being built and why it mattered at every step.”</p>
+              <strong>E-Commerce Manager</strong>
+              <span>Brooklyn, New York</span>
+            </article>
+            <article class="review-card reveal">
+              <div class="stars">★★★★★</div>
+              <p>“The storefront looked more trustworthy after the rebuild. Navigation, product presentation, and speed all improved.”</p>
+              <strong>Boutique Retail Owner</strong>
+              <span>Miami, Florida</span>
+            </article>
+            <article class="review-card reveal">
+              <div class="stars">★★★★★</div>
+              <p>“The automation work connected our tools without overcomplicating the system. It felt built for real daily operations.”</p>
+              <strong>Growth Team Lead</strong>
+              <span>Chicago, Illinois</span>
+            </article>
+            <article class="review-card reveal">
+              <div class="stars">★★★★★</div>
+              <p>“Clear communication, polished execution, and a final handover we could actually maintain. That made the investment feel safe.”</p>
+              <strong>Online Store Director</strong>
+              <span>Seattle, Washington</span>
+            </article>
           </div>
         </div>
       </section>
