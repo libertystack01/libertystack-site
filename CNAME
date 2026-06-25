@@ -1,1 +1,36 @@
-libertystack.co.in
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Ishant | LibertyStack Solutions</title>
+  <meta name="description" content="About Ishant Kumar Sharma, founder of LibertyStack Solutions.">
+  <link rel="icon" type="image/png" href="assets/logo.png"><link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="about.html">
+  <main>
+    <section class="hero container">
+      <div>
+        <p class="eyebrow">Verified Founder</p>
+        <h1>Ishant Kumar Sharma</h1>
+        <p class="lead">Founder and CEO of LibertyStack Solutions, focused on high-performance websites, Shopify systems, support workflows, and automation for modern businesses.</p>
+        <div class="actions"><a class="button primary" href="contact.html">Work With Ishant</a><a class="button ghost" href="services-pricing.html">View Plans</a></div>
+      </div>
+      <div class="profile-panel"><img src="assets/founder-portrait.png.jpeg" alt="LibertyStack founder visual"></div>
+    </section>
+    <section class="section band">
+      <div class="container grid-3">
+        <article class="card"><span class="kicker">Technical Leadership</span><h3>Website and automation execution</h3><p class="muted">HTML, CSS, Python automation, Shopify architecture, and practical digital systems for growing operations.</p></article>
+        <article class="card"><span class="kicker">Operations</span><h3>E-commerce workflow depth</h3><p class="muted">Experience in large-scale order workflows, vendor coordination, support systems, and operational strategy.</p></article>
+        <article class="card dark"><span class="kicker">Location</span><h3>Hazaribagh, Jharkhand</h3><p>Owner-led service for Indian and international brands that need clean execution without unnecessary complexity.</p></article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container split">
+        <div><p class="eyebrow">Professional Profile</p><h2>Bridging technical infrastructure and business growth.</h2></div>
+        <div><p class="lead">Ishant helps brands build trustworthy web presences and smoother internal systems. LibertyStack is built around a simple principle: clear presentation, clear pricing, and systems that make business operations easier to manage.</p></div>
+      </div>
+    </section>
+  </main>
+  <script src="site.js"></script><script src="script.js"></script>
+</body>
+</html>
