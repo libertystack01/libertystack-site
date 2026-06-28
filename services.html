@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — LibertyStack Solutions</title>
+  <meta name="description" content="Get in touch with LibertyStack Solutions to start your web design, e-commerce, or automation project." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── NAVBAR ───────────────────────────── -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-text">Liberty<span class="nav-logo-dot">Stack</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html" class="nav-cta active">Get in Touch</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── HERO ─────────────────────────────── -->
+<section class="contact-hero">
+  <div class="section-header fade-up">
+    <span class="script-label">Let's Connect</span>
+    <h1>Tell Ishant What<br>You Want to Build</h1>
+    <div class="divider-gold"></div>
+    <p>Whether you have a detailed brief or just a rough idea — reach out and let's explore what we can create together. No obligations, no pressure.</p>
+  </div>
+</section>
+
+<!-- ── CONTACT GRID ──────────────────────── -->
+<section class="section">
+  <div class="contact-grid">
+
+    <!-- Left: Info -->
+    <div class="contact-info fade-up">
+      <span class="script-label">Reach Out</span>
+      <h3>We're Ready to Listen</h3>
+      <div class="divider-gold" style="margin:1rem 0;"></div>
+      <p>Use the form for project queries and we'll get back to you within 24 hours. Or if you prefer a direct conversation, give us a call.</p>
+
+      <div style="margin-top:2.5rem;">
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div>
+            <div class="contact-detail-label">Phone</div>
+            <div class="contact-detail-value">
+              <a href="tel:+917004625082" style="color:var(--text-dark); text-decoration:none;">+91 7004625082</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div>
+            <div class="contact-detail-label">Location</div>
+            <div class="contact-detail-value">Patna, Bihar, India</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🌍</div>
+          <div>
+            <div class="contact-detail-label">Availability</div>
+            <div class="contact-detail-value">Serving clients worldwide</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">⏱️</div>
+          <div>
+            <div class="contact-detail-label">Response Time</div>
+            <div class="contact-detail-value">Within 24 hours</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:3rem; padding:2rem; background:var(--peach); border-radius:4px;">
+        <h4 style="font-family:var(--font-display); font-size:1.2rem; margin-bottom:0.7rem;">Free Consultation</h4>
+        <p style="font-size:0.92rem;">Not sure where to start? Book a free 30-minute discovery call and let's map out exactly what you need.</p>
+        <a href="tel:+917004625082" class="btn-outline" style="margin-top:1.2rem; display:inline-flex; border-color:var(--text-dark);">Call Now →</a>
+      </div>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="contact-form fade-up stagger-2">
+      <h3 style="font-family:var(--font-display); font-size:1.6rem; margin-bottom:0.5rem;">Send a Project Query</h3>
+      <p style="font-size:0.88rem; margin-bottom:2rem; color:var(--text-light);">Fill in your details and we'll respond within 24 hours.</p>
+
+      <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000" />
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="Website Design">Website Design</option>
+              <option value="E-commerce Store">E-Commerce Store</option>
+              <option value="Website Redesign">Website Redesign</option>
+              <option value="AI Automation">Internal Support & AI Automation</option>
+              <option value="Other">Other Query</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="budget">Approximate Budget</label>
+          <select id="budget" name="budget">
+            <option value="" disabled selected>Select budget range</option>
+            <option value="Under ₹5,000">Under ₹5,000</option>
+            <option value="₹5,000 – ₹15,000">₹5,000 – ₹15,000</option>
+            <option value="₹15,000 – ₹30,000">₹15,000 – ₹30,000</option>
+            <option value="₹30,000+">₹30,000+</option>
+            <option value="Not sure">Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="query">Your Query</label>
+          <textarea id="query" name="query" placeholder="Tell us about your project, goals, and any specific requirements…" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width:100%; justify-content:center; padding:1rem;">
+          Send Query →
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ──────────────────────────────── -->
+<section class="section section-alt">
+  <div class="section-header fade-up">
+    <span class="script-label">Quick Answers</span>
+    <h2>Frequently Asked Questions</h2>
+    <div class="divider-gold"></div>
+  </div>
+  <div style="max-width:750px; margin:0 auto; display:flex; flex-direction:column; gap:1.2rem;">
+    <details style="background:var(--white); border:1px solid var(--border); border-radius:4px; padding:1.5rem; cursor:pointer;">
+      <summary style="font-family:var(--font-display); font-size:1.2rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+        How long does a typical project take?
+        <span style="color:var(--gold); font-size:1.5rem;">+</span>
+      </summary>
+      <p style="margin-top:1rem; font-size:0.95rem;">Most website projects are completed within 2–4 weeks. E-commerce stores may take 3–6 weeks depending on complexity. Automation projects typically take 1–3 weeks.</p>
+    </details>
+    <details style="background:var(--white); border:1px solid var(--border); border-radius:4px; padding:1.5rem; cursor:pointer;">
+      <summary style="font-family:var(--font-display); font-size:1.2rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+        Do you work with international clients?
+        <span style="color:var(--gold); font-size:1.5rem;">+</span>
+      </summary>
+      <p style="margin-top:1rem; font-size:0.95rem;">Absolutely. We work with clients across India, the UK, US, and beyond. All communication and deliverables are in English, and we accommodate different time zones for meetings.</p>
+    </details>
+    <details style="background:var(--white); border:1px solid var(--border); border-radius:4px; padding:1.5rem; cursor:pointer;">
+      <summary style="font-family:var(--font-display); font-size:1.2rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+        What do you need from me to get started?
+        <span style="color:var(--gold); font-size:1.5rem;">+</span>
+      </summary>
+      <p style="margin-top:1rem; font-size:0.95rem;">A brief description of your business, your goals, and any reference sites you admire. We handle the rest — you don't need to be technical at all.</p>
+    </details>
+    <details style="background:var(--white); border:1px solid var(--border); border-radius:4px; padding:1.5rem; cursor:pointer;">
+      <summary style="font-family:var(--font-display); font-size:1.2rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+        Is post-launch support included?
+        <span style="color:var(--gold); font-size:1.5rem;">+</span>
+      </summary>
+      <p style="margin-top:1rem; font-size:0.95rem;">Yes — all projects include 30 days of post-launch support at no extra charge. Ongoing maintenance and support packages are available after that.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ── FOOTER ───────────────────────────── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo" style="text-decoration:none;">
+        <span class="nav-logo-text">Liberty<span class="nav-logo-dot">Stack</span></span>
+      </a>
+      <p>Premium web design, e-commerce, and automation solutions. Built with craft. Delivered with care.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p style="margin-bottom:0.5rem;">📞 <a href="tel:+917004625082" style="color:rgba(255,248,245,0.65);text-decoration:none;">+91 7004625082</a></p>
+      <p>Based in Patna, India<br>Serving clients worldwide.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 LibertyStack Solutions. All rights reserved.</p>
+    <p style="color:rgba(255,248,245,0.3);">Crafted with ♡ in India</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
