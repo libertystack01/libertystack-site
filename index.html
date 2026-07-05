@@ -1,57 +1,188 @@
-// ── NAVBAR SCROLL ──────────────────────────────
-const navbar = document.querySelector('.navbar');
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liberty Stack | Luxury Web Design Studio</title>
+  <meta name="description" content="Liberty Stack builds elegant websites, redesigns, online stores, and subpages for growing brands.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Liberty Stack home">
+      <span class="brand-mark">LS</span>
+      <span>Liberty Stack</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav">
+      <a href="services.html">Services</a>
+      <a href="work.html">Our Work</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-button" href="plans.html">Plans</a>
+    </nav>
+  </header>
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 40) navbar.classList.add('scrolled');
-  else navbar.classList.remove('scrolled');
-});
+  <main>
+    <section class="hero hero-home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Luxury websites for modern independent brands</p>
+        <h1>Websites that feel polished, premium, and ready to sell.</h1>
+        <p class="hero-copy">Liberty Stack designs clean, fast, high-converting websites for founders, boutiques, creators, and online stores that want a refined digital presence.</p>
+        <div class="button-row">
+          <a class="button primary" href="plans.html">View Plans</a>
+          <a class="button secondary" href="work.html">See Our Work</a>
+        </div>
+      </div>
+    </section>
 
-if (hamburger) {
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    navLinks.classList.toggle('open');
-  });
-  navLinks.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      hamburger.classList.remove('open');
-      navLinks.classList.remove('open');
-    });
-  });
-}
+    <section class="intro-section">
+      <div>
+        <p class="eyebrow">What we do</p>
+        <h2>Freelance flexibility with studio-level finish.</h2>
+      </div>
+      <p>From first websites to redesigns and ecommerce stores, we create layouts that look expensive, load smoothly, and guide visitors toward action.</p>
+    </section>
 
-// ── ACTIVE LINK ─────────────────────────────────
-const currentPath = window.location.pathname.replace(/\/$/, '') || '/index.html';
-document.querySelectorAll('.nav-links a').forEach(a => {
-  const href = a.getAttribute('href').replace(/\/$/, '');
-  if (currentPath.endsWith(href) || (href === 'index.html' && (currentPath === '' || currentPath.endsWith('/')))) {
-    a.classList.add('active');
-  }
-});
+    <section class="service-grid" aria-label="Featured services">
+      <article class="service-card">
+        <span>01</span>
+        <h3>Website Design</h3>
+        <p>New brand websites with elegant layouts, responsive pages, and a premium first impression.</p>
+        <a href="plans.html">Check price</a>
+      </article>
+      <article class="service-card">
+        <span>02</span>
+        <h3>Website Redesign</h3>
+        <p>A full refresh for websites that feel outdated, confusing, slow, or visually inconsistent.</p>
+        <a href="plans.html">Check price</a>
+      </article>
+      <article class="service-card">
+        <span>03</span>
+        <h3>Online Stores</h3>
+        <p>Product-focused storefronts with clear categories, refined product sections, and easy calls to buy.</p>
+        <a href="plans.html">Check price</a>
+      </article>
+      <article class="service-card">
+        <span>04</span>
+        <h3>Subpages</h3>
+        <p>About, services, collection, booking, contact, and landing pages added to an existing site.</p>
+        <a href="plans.html">Check price</a>
+      </article>
+    </section>
 
-// ── FADE-UP INTERSECTION OBSERVER ───────────────
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
-}, { threshold: 0.12 });
+    <section class="image-band">
+      <div class="image-band-content">
+        <p class="eyebrow">Design mood</p>
+        <h2>Soft peach, white space, light gold details, and confident typography.</h2>
+        <p>We keep the design calm and luxurious so your work, products, and message stay at the center.</p>
+      </div>
+    </section>
 
-document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    <section class="work-preview">
+      <div class="section-heading">
+        <p class="eyebrow">Our work</p>
+        <h2>Selected projects</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-image retrofox"></div>
+          <div>
+            <h3>Retro Fox Apparel</h3>
+            <p>Fashion storefront direction for a bold apparel brand.</p>
+            <a href="https://retrofoxapparel.com" target="_blank" rel="noopener">retrofoxapparel.com</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image velmont"></div>
+          <div>
+            <h3>Velmont London</h3>
+            <p>Premium brand layout direction for a refined London label.</p>
+            <a href="https://velmontlondon.com" target="_blank" rel="noopener">velmontlondon.com</a>
+          </div>
+        </article>
+      </div>
+      <div class="center-action">
+        <a class="button secondary" href="work.html">Open work page</a>
+      </div>
+    </section>
 
-// ── CONTACT FORM ─────────────────────────────────
-const form = document.getElementById('contactForm');
-if (form) {
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    const orig = btn.textContent;
-    btn.textContent = 'Sending…';
-    btn.disabled = true;
-    await new Promise(r => setTimeout(r, 1200));
-    btn.textContent = '✓ Message Sent';
-    btn.style.background = '#C9A96E';
-    setTimeout(() => { btn.textContent = orig; btn.disabled = false; btn.style.background = ''; }, 3500);
-  });
-}
+    <section class="reviews-section">
+      <div class="section-heading">
+        <p class="eyebrow">Client words</p>
+        <h2>Reviews</h2>
+      </div>
+      <div class="reviews-grid">
+        <article class="review-card">
+          <p>"The website finally looks like the quality of our brand. Clean, elegant, and easy for customers to use."</p>
+          <h3>Amara K.</h3>
+          <span>Fashion founder</span>
+        </article>
+        <article class="review-card">
+          <p>"Liberty Stack gave our old site a premium redesign and made the whole layout feel more trustworthy."</p>
+          <h3>Daniel R.</h3>
+          <span>Consulting studio</span>
+        </article>
+        <article class="review-card">
+          <p>"The online store was delivered with beautiful sections, clear product pages, and a luxury feel."</p>
+          <h3>Sofia M.</h3>
+          <span>Online boutique</span>
+        </article>
+        <article class="review-card">
+          <p>"Fast communication, great taste, and a smooth process from first idea to final website."</p>
+          <h3>Ryan P.</h3>
+          <span>Independent creator</span>
+        </article>
+      </div>
+    </section>
 
-// ── PAGE ENTER ANIMATION ─────────────────────────
-document.body.classList.add('page-enter');
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="eyebrow">Contact us</p>
+        <h2>Tell us what you want to build.</h2>
+        <p>Send your project details and we will reply with the best plan, timeline, and next steps.</p>
+      </div>
+      <form class="contact-form" data-contact-form>
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Project type
+          <select name="project">
+            <option>Website design</option>
+            <option>Website redesign</option>
+            <option>Online store</option>
+            <option>Add subpages</option>
+            <option>Other service</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" placeholder="Share your idea, website link, budget, or deadline."></textarea>
+        </label>
+        <button class="button primary" type="submit">Send Message</button>
+        <p class="form-note" data-form-note></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Liberty Stack</p>
+    <div>
+      <a href="services.html">Services</a>
+      <a href="plans.html">Plans</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

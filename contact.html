@@ -1,1 +1,69 @@
-libertystack.co.in
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Liberty Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">LS</span><span>Liberty Stack</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav">
+      <a href="services.html">Services</a>
+      <a href="work.html">Our Work</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-button" href="plans.html">Plans</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero contact-hero">
+      <p class="eyebrow">Contact</p>
+      <h1>Start your website project.</h1>
+      <p>Share your idea and Liberty Stack will help you choose the right plan.</p>
+    </section>
+    <section class="contact-section single">
+      <div>
+        <p class="eyebrow">Project details</p>
+        <h2>What should we build for you?</h2>
+        <p>You can request a new website, redesign, online store, extra pages, or a custom service conversation.</p>
+      </div>
+      <form class="contact-form" data-contact-form>
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Project type
+          <select name="project">
+            <option>Website design - $500</option>
+            <option>Website redesign - $300</option>
+            <option>Online store - $600</option>
+            <option>Subpages - $10 per page</option>
+            <option>Other service conversation</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="6" placeholder="Tell us about your business, pages needed, and timeline."></textarea>
+        </label>
+        <button class="button primary" type="submit">Send Message</button>
+        <p class="form-note" data-form-note></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Liberty Stack</p>
+    <div><a href="index.html">Home</a><a href="services.html">Services</a><a href="plans.html">Plans</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
