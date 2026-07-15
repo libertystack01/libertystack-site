@@ -1,28 +1,13 @@
-Liberty Stack fresh static website
+LIBERTYSTACK WEBSITE REDESIGN
 
-Upload all files in this folder to your GitHub repository:
-
-- CNAME
-- .nojekyll
-- 404.html
-- index.html
-- plans.html
-- services.html
-- work.html
-- contact.html
-- styles.css
-- style.css
-- script.js
-- site.js
-- robots.txt
-- sitemap.xml
-
-The site is fully static and does not need a build command.
+Deployment on GitHub Pages:
+1. Extract this ZIP.
+2. Delete the existing website files in your repository.
+3. Upload all extracted files and folders to the repository root.
+4. Commit the changes.
+5. In GitHub repository Settings > Pages, deploy from the main branch/root folder.
 
 Important:
-- The Plans button at the top opens plans.html.
-- Contact forms use mailto:hello@libertystack.co.in.
-- Background images are loaded from Unsplash URLs.
-- Work links point to retrofoxapparel.com and velmontlondon.com.
-- CNAME is included for the custom domain libertystack.co.in.
-- In GitHub, set Pages to deploy from the main branch and root folder.
+- The contact form uses FormSubmit and sends submissions to ishant@libertystack.co.in.
+- The first submission may require an email confirmation from FormSubmit.
+- All pages are static HTML/CSS/JavaScript and require no build process.
