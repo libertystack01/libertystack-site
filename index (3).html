@@ -1,12 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plans | Liberty Stack</title>
+  <meta name="description" content="Liberty Stack pricing plans for web design, redesigns, online stores, and added subpages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+<link rel="canonical" href="https://libertystack.co.in/plans/"></head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/"><span class="brand-mark">LS</span><span>Liberty Stack</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav">
+      <a href="/services/">Services</a>
+      <a href="/work/">Our Work</a>
+      <a href="/contact/">Contact</a>
+      <a class="nav-button" href="/plans/">Plans</a>
+    </nav>
+  </header>
 
-const nav=document.querySelector('.nav'),menu=document.querySelector('.menu');
-addEventListener('scroll',()=>nav?.classList.toggle('scrolled',scrollY>18));
-menu?.addEventListener('click',()=>nav.classList.toggle('open'));
-document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
-document.querySelectorAll('[data-tilt]').forEach(el=>{el.addEventListener('mousemove',e=>{const r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.style.transform=`perspective(900px) rotateY(${x*8}deg) rotateX(${-y*7}deg)`});el.addEventListener('mouseleave',()=>el.style.transform='')});
-const form=document.querySelector('#contact-form');
-if(form){form.addEventListener('submit',async e=>{e.preventDefault();const btn=form.querySelector('button[type=submit]'),status=form.querySelector('.form-status');btn.disabled=true;btn.textContent='Sending…';status.className='form-status';try{const data=new FormData(form);const res=await fetch(form.action,{method:'POST',body:data,headers:{Accept:'application/json'}});if(!res.ok)throw new Error();status.textContent='Thank you — your message has been sent. Redirecting to the home page…';status.className='form-status show ok';form.reset();setTimeout(()=>location.href='/?submitted=true',1400)}catch(err){status.textContent='We could not submit the form. Please email ishant@libertystack.co.in directly.';status.className='form-status show error';btn.disabled=false;btn.textContent='Send inquiry ↗'}})}
-if(new URLSearchParams(location.search).get('submitted')==='true'){const note=document.createElement('div');note.textContent='Thanks — your inquiry was submitted successfully.';Object.assign(note.style,{position:'fixed',left:'50%',bottom:'24px',transform:'translateX(-50%)',zIndex:'1000',background:'#07111f',color:'#fff',padding:'14px 20px',borderRadius:'999px',font:'600 13px Inter, sans-serif',boxShadow:'0 20px 50px rgba(0,0,0,.25)'});document.body.append(note);setTimeout(()=>note.remove(),4500);history.replaceState({},'',location.pathname)}
+  <main>
+    <section class="page-hero plans-hero">
+      <p class="eyebrow">Plans</p>
+      <h1>Clear pricing for premium website work.</h1>
+      <p>Choose the service that matches your next move. If your idea is different, request a conversation below.</p>
+    </section>
+
+    <section class="pricing-grid">
+      <article class="price-card featured">
+        <p>Most requested</p>
+        <h2>Web Designing</h2>
+        <strong>$500</strong>
+        <span>Complete new website design</span>
+        <a class="button primary" href="/contact/">Start this plan</a>
+      </article>
+      <article class="price-card">
+        <p>Fresh look</p>
+        <h2>Re-designing</h2>
+        <strong>$300</strong>
+        <span>Refresh an existing website</span>
+        <a class="button secondary" href="/contact/">Start this plan</a>
+      </article>
+      <article class="price-card">
+        <p>Sell online</p>
+        <h2>Online Store</h2>
+        <strong>$600</strong>
+        <span>Store setup and product-focused pages</span>
+        <a class="button secondary" href="/contact/">Start this plan</a>
+      </article>
+      <article class="price-card">
+        <p>Add more</p>
+        <h2>Existing Site Subpages</h2>
+        <strong>$10</strong>
+        <span>Per added page</span>
+        <a class="button secondary" href="/contact/">Start this plan</a>
+      </article>
+    </section>
+
+    <section class="conversation-section">
+      <div>
+        <p class="eyebrow">Need another service?</p>
+        <h2>Request a conversation.</h2>
+        <p>If your service is not listed, tell us what you need. We can discuss custom landing pages, brand sections, booking pages, product pages, maintenance, speed fixes, or something more specific.</p>
+      </div>
+      <form class="contact-form compact" data-contact-form>
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Service requested
+          <textarea name="message" rows="5" placeholder="Describe the service you want to discuss."></textarea>
+        </label>
+        <button class="button primary" type="submit">Request Conversation</button>
+        <p class="form-note" data-form-note></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Liberty Stack</p>
+    <div>
+      <a href="/">Home</a>
+      <a href="/services/">Services</a>
+      <a href="/contact/">Contact</a>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

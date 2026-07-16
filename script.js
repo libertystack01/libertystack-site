@@ -1,33 +1,12 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const siteNav = document.querySelector(".site-nav");
-
-if (menuToggle && siteNav) {
-  menuToggle.addEventListener("click", () => {
-    const isOpen = siteNav.classList.toggle("is-open");
-    menuToggle.setAttribute("aria-expanded", String(isOpen));
-  });
-}
-
-document.querySelectorAll("[data-contact-form]").forEach((form) => {
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const data = new FormData(form);
-    const name = data.get("name") || "";
-    const email = data.get("email") || "";
-    const project = data.get("project") || "Custom service";
-    const message = data.get("message") || "";
-    const note = form.querySelector("[data-form-note]");
-
-    const subject = encodeURIComponent(`Liberty Stack inquiry: ${project}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nProject: ${project}\n\nMessage:\n${message}`
-    );
-
-    if (note) {
-      note.textContent = "Opening your email app with the message ready to send.";
-    }
-
-    window.location.href = `mailto:hello@libertystack.co.in?subject=${subject}&body=${body}`;
-  });
-});
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="refresh" content="0;url=/contact/">
+  <link rel="canonical" href="https://libertystack.co.in/contact/">
+  <title>Redirecting to LibertyStack</title>
+  <script>location.replace('/contact/' + location.search + location.hash);</script>
+</head>
+<body><p>Redirecting to <a href="/contact/">/contact/</a>...</p></body>
+</html>
