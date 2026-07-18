@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — LibertyStack Solutions</title>
-  <meta name="description" content="Learn about LibertyStack Solutions, an independent e-commerce development studio led by Ishant Kumar Sharma.">
+  <title>Contact — LibertyStack Solutions</title>
+  <meta name="description" content="Reach out to LibertyStack Solutions to build Shopify stores, custom API backend structures, or python data automation tools.">
+  <!-- Corrected path to assets -->
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -21,8 +22,8 @@
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="services.html" class="nav-link">Services</a></li>
         <li><a href="work.html" class="nav-link">Work</a></li>
-        <li><a href="about.html" class="nav-link active">About</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
         <li><a href="contact.html" class="btn btn-secondary btn-nav">Start a project</a></li>
       </ul>
     </div>
@@ -30,94 +31,113 @@
 
   <main>
     <!-- Page Hero -->
-    <section class="page-hero" id="about-hero">
+    <section class="page-hero" id="contact-hero">
       <div class="container">
-        <span class="eyebrow">Studio Creed</span>
-        <h1>Small team thinking. <span class="cyber-gradient-text">Serious systems.</span></h1>
-        <p>LibertyStack is an independent technology studio led by Ishant Kumar Sharma, dedicated to constructing reliable operational tools and high-speed store layouts.</p>
+        <span class="eyebrow">Start a Project</span>
+        <h1>Let's build <span class="cyber-gradient-text">serious systems.</span></h1>
+        <p>Tell us about your storefront bottlenecks, database integration needs, or manual workflow spreadsheets. We will follow up with design mockups and structured system plans.</p>
       </div>
       <!-- Decorative Orbs -->
-      <div class="orb orb-1" style="top: 15%; right: 10%;"></div>
+      <div class="orb orb-1" style="top: 10%; right: 10%;"></div>
+      <div class="orb orb-2" style="bottom: 20%; left: 5%;"></div>
     </section>
 
-    <!-- Intro Details -->
-    <section class="section" id="about-details">
-      <div class="container about-intro">
-        <div class="about-visual" id="about-visual-panel">
-          <div class="about-visual-badge">EST. 2024</div>
-          <div class="about-visual-text">
-            Clean code.<br>
-            Direct communication.<br>
-            No bloated budgets.
+    <!-- Contact Form & Info Layout -->
+    <section class="section" id="contact-details-section">
+      <div class="container contact-layout">
+        
+        <!-- Column 1: Info blocks -->
+        <div class="contact-info" id="contact-info-panel">
+          <div class="contact-info-block" id="contact-email">
+            <h3>Direct Email</h3>
+            <p><a href="mailto:hello@libertystack.co.in">hello@libertystack.co.in</a></p>
+          </div>
+          
+          <div class="contact-info-block" id="contact-location">
+            <h3>Location</h3>
+            <p>Hazaribagh, Jharkhand, India</p>
+          </div>
+
+          <div class="contact-info-block" id="contact-availability">
+            <h3>Working Terms</h3>
+            <p>Remote Worldwide</p>
           </div>
         </div>
-        <div class="about-text" id="about-text-content">
-          <h2>We build technical foundations, not temporary patches.</h2>
-          <p>We work primarily with ambitious founders, operational managers, and developers who are tired of software layouts that break during high-traffic sales events.</p>
-          <p>We keep our team small and focused. When you start a project with LibertyStack, you communicate directly with backend engineers who understand how databases function under load, not proxy project managers.</p>
-        </div>
-      </div>
-    </section>
 
-    <!-- Our Values / Creed Grid -->
-    <section class="section" id="creed-section" style="background: rgba(255,255,255,0.01); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
-      <div class="container">
-        <div class="section-header">
-          <span class="eyebrow">Principles</span>
-          <h2 class="gradient-text">What guides our engineering.</h2>
-          <p>We adhere to strict standards to ensure the systems we build survive spikes in transaction numbers and remain easy to update.</p>
-        </div>
-
-        <div class="creed-grid">
-          <!-- Card 1 -->
-          <article class="glass-card creed-card" id="creed-maintainability">
-            <h3>01 / Strict Maintainability</h3>
-            <p>We write clean, typed codebases, document every API parameter, and build extensive automated tests. This ensures your internal team can take over codebases easily.</p>
-          </article>
-
-          <!-- Card 2 -->
-          <article class="glass-card creed-card" id="creed-no-bloat">
-            <h3>02 / Practical Tool Selection</h3>
-            <p>We select technologies based on production stability, request latency benchmarks, and business fit. We do not use bloated setups to satisfy industry hype cycles.</p>
-          </article>
-
-          <!-- Card 3 -->
-          <article class="glass-card creed-card" id="creed-transparency">
-            <h3>03 / Honest Benchmarks</h3>
-            <p>We deliver direct access to staging sandboxes and provide clear execution timelines. If an API rate limit or database query structure introduces a latency risk, we address it openly.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bio / Leadership Section -->
-    <section class="section" id="leadership-section">
-      <div class="container" style="display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 60px; align-items: center;">
-        <div style="position: relative;">
-          <div style="width: 100%; aspect-ratio: 1; border-radius: 20px; background: linear-gradient(135deg, var(--primary-glow), var(--secondary-glow)); border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; font-size: 80px;" id="bio-visual">
-            👨‍💻
+        <!-- Column 2: Interactive intake form panel -->
+        <div class="contact-form-panel" id="contact-form-panel">
+          
+          <!-- Steps progress indicator -->
+          <div class="contact-steps-indicator" id="form-steps-indicator">
+            <span class="step-indicator-bar active"></span>
+            <span class="step-indicator-bar"></span>
+            <span class="step-indicator-bar"></span>
           </div>
-        </div>
-        <div id="bio-text">
-          <span class="eyebrow" style="display: inline-block; margin-bottom: 12px;">Studio Lead</span>
-          <h2 style="font-size: 32px; margin-bottom: 16px;">Ishant Kumar Sharma</h2>
-          <p style="font-size: 16px; margin-bottom: 20px; color: var(--text-main);">Technical Lead &amp; Systems Architect</p>
-          <p style="margin-bottom: 16px;">Ishant leads system architecture and theme design projects at LibertyStack. With years of experience writing python APIs, database reconciliations, and custom Shopify themes, he works directly with clients to map operations into clean, scalable software tools.</p>
-          <p>Based in Hazaribagh, Jharkhand, India, Ishant works remotely with online stores, founders, and technical teams around the globe.</p>
-        </div>
-      </div>
-    </section>
 
-    <!-- Call to Action -->
-    <section class="section" id="about-cta-section">
-      <div class="container">
-        <div class="cta-banner" id="about-cta-banner">
-          <h2>Looking for technical co-pilots?</h2>
-          <p>Let's map out your systems, eliminate error-prone worksheets, and build custom storefronts that load instantly.</p>
-          <a href="contact.html" class="btn btn-primary" id="about-cta-btn">
-            Start the conversation
-            <span class="btn-icon">→</span>
-          </a>
+          <form id="project-intake-form" novalidate>
+            <!-- STAGE 1: Profile details -->
+            <div class="contact-form-stage active" id="form-stage-profile">
+              <h3>Tell us about yourself</h3>
+              
+              <div class="form-group">
+                <label for="client-name" class="form-label">What is your name? *</label>
+                <input type="text" id="client-name" class="form-input" placeholder="e.g. Ishant Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label for="client-email" class="form-label">Work email address *</label>
+                <input type="email" id="client-email" class="form-input" placeholder="name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="client-company" class="form-label">Company / Brand Name</label>
+                <input type="text" id="client-company" class="form-input" placeholder="e.g. LibertyStack Solutions">
+              </div>
+            </div>
+
+            <!-- STAGE 2: Service Focus selection -->
+            <div class="contact-form-stage" id="form-stage-focus">
+              <h3>What system needs attention?</h3>
+              <p style="color: var(--text-muted); margin-bottom: 24px; font-size: 14px;">Select the primary technical service requirement for your project.</p>
+              
+              <input type="hidden" name="service" id="selected-service" value="shopify">
+
+              <div class="grid-selector">
+                <div class="selector-option active" data-value="shopify">Shopify Storefronts</div>
+                <div class="selector-option" data-value="automation">Python Automation</div>
+                <div class="selector-option" data-value="integrations">Backend API Sync</div>
+                <div class="selector-option" data-value="ecosystem">Full System Audit</div>
+              </div>
+            </div>
+
+            <!-- STAGE 3: Budget and project details -->
+            <div class="contact-form-stage" id="form-stage-details">
+              <h3>Project scale &amp; context</h3>
+              
+              <div class="form-group">
+                <label class="form-label">Estimated Budget: <span id="budget-value" style="color: var(--primary); font-weight: 700;">$5,000</span></label>
+                <div class="slider-container">
+                  <input type="range" id="project-budget" class="range-slider" min="2500" max="25000" step="2500" value="5000">
+                  <div class="slider-labels">
+                    <span>$2,500</span>
+                    <span>$12,500</span>
+                    <span>$25,000+</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="project-description" class="form-label">Tell us about the project bottlenecks *</label>
+                <textarea id="project-description" class="form-input" placeholder="Describe the current site layout problems, sheet automations, or API requirements..." required></textarea>
+              </div>
+            </div>
+
+            <!-- Form Navigation controls -->
+            <div class="form-navigation">
+              <button type="button" class="btn btn-secondary" id="btn-prev" style="display: none;">Back</button>
+              <button type="button" class="btn btn-secondary" id="btn-next" style="margin-left: auto;">Continue →</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -160,6 +180,7 @@
     </div>
   </footer>
 
+  <!-- Corrected path to assets -->
   <script src="assets/main.js"></script>
 </body>
 </html>
